@@ -1,0 +1,23 @@
+# Core numerical computing
+numpy>=1.21.0
+
+# JAX for high-performance computing (optional)
+# jax>=0.4.0
+# jaxlib>=0.4.0
+
+# Advanced linear algebra and scientific computing
+scipy>=1.7.0
+
+# Data manipulation and analysis
+pandas>=1.3.0
+
+# Plotting and visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Machine learning utilities (for comparison and validation)
+scikit-learn>=1.0.0
+
+# Development and testing
+pytest>=6.0.0
+jupyter>=1.0.0
