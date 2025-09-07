@@ -1,0 +1,39 @@
+PLS Example Datasets Summary
+========================================
+
+Generated on: 2025-09-07
+Total datasets: 13
+
+Dataset Details:
+--------------------
+small_linear         X(20, 5) -> Y(20, 2)
+small_nonlinear      X(25, 4) -> Y(25, 2)
+small_noisy          X(15, 6) -> Y(15, 3)
+medium_linear        X(100, 10) -> Y(100, 3)
+medium_nonlinear     X(150, 8) -> Y(150, 4)
+medium_high_dim      X(80, 120) -> Y(80, 3)
+medium_collinear     X(120, 15) -> Y(120, 2)
+large_linear         X(1000, 20) -> Y(1000, 5)
+large_high_dim       X(200, 500) -> Y(200, 8)
+large_noisy          X(800, 25) -> Y(800, 6)
+tiny                 X(8, 3) -> Y(8, 1)
+wide                 X(50, 200) -> Y(50, 2)
+multi_target         X(200, 15) -> Y(200, 10)
+
+File Formats:
+---------------
+CSV files: Comma-separated values (.csv)
+TXT files: Space-separated values (.txt)
+
+Usage Examples:
+---------------
+# Load CSV files
+X = np.loadtxt('small_linear_X.csv', delimiter=',')
+Y = np.loadtxt('small_linear_Y.csv', delimiter=',')
+
+# Load TXT files
+X = np.loadtxt('small_linear_X.txt')
+Y = np.loadtxt('small_linear_Y.txt')
+
+# Command line usage
+python main.py run small_linear_X.csv small_linear_Y.csv
